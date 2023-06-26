@@ -14,15 +14,12 @@ let currentSearch = '';
 let currentPage = 1;
 const lightbox = new SimpleLightbox('.gallery a');
 
-console.log(buttonLoadMoreRef);
-
 inputSearchQueryRef.addEventListener('input', onInputSearchQuery);
 formSearchRef.addEventListener('submit', onButtonSearchSubmit);
 buttonLoadMoreRef.addEventListener('click', onButtonLoadMoreClick);
 
 function onInputSearchQuery(event) {
   currentSearch = event.target.value.trim();
-  console.log(event.target.value);
 }
 
 async function onButtonSearchSubmit(event) {
