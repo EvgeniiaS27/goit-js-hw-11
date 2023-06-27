@@ -8,7 +8,7 @@ export async function fetchImages(search, page) {
     const response = await axios.get(URL);
     const data = await response.data;
 
-    return data;
+    return response.data;
   } catch (err) {
     return console.log(err);
   }
